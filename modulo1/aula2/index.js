@@ -1,6 +1,12 @@
-//               01234567
-let umaString = 'Um texto';
+const pessoa1 = {
+    nome: 'Edson',
+    sobrenome: 'Lima',
+    idade: 20,
 
-console.log(umaString.concat(' ','em', ' ', 'um', ' ', 'lindo dia.'));
-console.log(umaString + ' em um lindo dia.')
-console.log(`${umaString} em um lindo dia.`)
+    fala () {
+        console.log(`${this.nome} ${this.sobrenome} está falando oi...`); 
+        // this dentro da função está chamando a função pessoa1  tuido é separado por , e funções 
+    }
+}
+
+pessoa1.fala();
