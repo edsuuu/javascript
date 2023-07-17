@@ -16,7 +16,7 @@ function meuEscorpo () {
         nome: nome.value,
         sobrenome: sobrenome.value,
         peso: peso.value,
-        altura: altura.value  //sempre que finlizar um parametro nã ultilizar , apenas ({ abrir e fechar parenteses e chaves}).
+        altura: altura.value  //sempre que finalizar um parametro nã ultilizar , apenas ({ abrir e fechar parenteses e chaves}).
     });
     console.log(pessoas);
 
