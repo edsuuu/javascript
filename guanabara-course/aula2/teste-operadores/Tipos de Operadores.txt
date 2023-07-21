@@ -25,8 +25,9 @@ Var e = 6 * 2 / d : 2
 Var f = b % e + 4 / e : 3
 
 Auto atribuição:
+
 Var n = 3
- n = n+4
+n = n+4
 n = n-5
 n = n*4
 n = n/2
