@@ -12,3 +12,4 @@ alert(`Você está aprendendo ${s}`)
 
 //numero + numero = somar 
 //string + string = concatenar
+
