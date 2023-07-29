@@ -4,7 +4,7 @@ Operadores de Comparação
 >= Maior ou igual a 
 < menor que 
 <= Menor ou igual a
-== igualdade "(=) é uma atribuição" aqui cchega a igual dade da direita pra esquerda "valor"
+== igualdade "(=) é uma atribuição" aqui chega a igualdade da direita pra esquerda "valor"
 === igualdade estrita     "valor e tipo"
 != diferente      "so checa valor"
 !== diferente estrita      "checa valor e tipo" 
