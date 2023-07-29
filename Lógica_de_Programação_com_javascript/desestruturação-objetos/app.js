@@ -8,6 +8,15 @@ const pessoa = {
     }
 }
 
-const { numero = 'Número Não existe', nome, sobrenome, ...resto } = pessoa;
+ const { id = 'ID Não existe', nome, sobrenome, ...resto } = pessoa;
 
-console.log(numero,",", nome, sobrenome, resto);
+//atribuição via desestruturação
+const { endereco: { rua, numero } , endereco /*trazer o endereço completo */ } = pessoa;
+
+console.log(id,",", nome, sobrenome, resto);
+console.log('');
+console.log(rua,",", numero, endereco );
+
+
+
+
