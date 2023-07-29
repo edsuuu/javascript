@@ -2,10 +2,16 @@
 
 // i de index
 for (let i = 0; i <= 5; i++) {
-    console.log(i);
+    const par = i % 2 === 0 ? 'par' : 'impar';
+    console.log(i, par);
 }
-for (let i = 10; i <= 50; i += 10) {
+
+const frutas = ['maça', 'pera', 'uva', 'melancia'];
+for (let i = 0; i < frutas.length; i++) {
     console.log(i);
+    console.log(frutas[i]);
+    console.log(`Indice ${i}, Fruta ${frutas[i]}`);
+
 }
 
 //primeira forma de fazer
