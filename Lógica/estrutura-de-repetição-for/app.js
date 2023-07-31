@@ -1,11 +1,21 @@
-const container = document.querySelector('.container');
-const h1 = document.querySelector('h1');
-const paragraph = document.querySelector('p');
+//for classico
 
-const elementos = [
-    {tag: 'p', texto: 'Frase 1'},
-    {tag: 'div', texto: 'Frase 2'},
-    {tag: 'footer', texto: 'Frase 3'},
-    {tag: 'section', texto: 'Frase 4'},
-];
+const nome = 'Edson LIma';
+const nome2 = ['Edson', 'Lima', 'Teles'];
 
+for (let i = 0; i < nome.length; i++) {
+    console.log(nome[i]);
+}
+console.log('');
+//for in 
+
+for (const i in nome2) {
+    console.log(nome2[i]);
+}
+console.log('');
+//for of
+
+for (const i of nome2) {
+    console.log(i);
+} 
+    
