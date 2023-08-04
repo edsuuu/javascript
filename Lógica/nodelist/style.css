@@ -1,0 +1,27 @@
+@charset "utf-8";
+ 
+body {
+    background-color: rgb(6, 93, 95);
+    
+    display: flex;
+    justify-content: center;
+}
+.container {
+    color: white;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    width: 600px;
+    height: 400px;
+    background-color: gray;
+}
+
+.container h1 {
+    font-size: 3em;
+
+}
+.paragrafos {
+    font-size: 1.3em;
+    line-height: 40px;
+}
