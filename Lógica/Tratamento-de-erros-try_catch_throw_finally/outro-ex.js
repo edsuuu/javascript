@@ -1,8 +1,32 @@
 function retornaHora(data) {
-    if (!(data instanceof Date)) //se essa data não foi a instancia de data
-    console.log('Não é'); 
-        throw new Error('data não é uma instancia de data');
-    return data;
+    if (data && !(data instanceof Date)) {
+        throw new TypeError('Esperando instância de Date.')
+    }
+
+    if (!data) {
+        data = new Date()
+    }
+
+    return data.toLocaleTimeString('pt-BR', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    });
 }
 
-retornaHora('Dateee');
+try {
+    const data = new Date('01-01-1970 12:58:12');
+    const hora = retornaHora(data); // se colocar um numero 11 da o erro 
+    console.log(hora);
+} catch (e) {
+    //tratar erro 
+} finally {
+    console.log('tenha um bom dia');
+}
+
+
+
+
+
+
