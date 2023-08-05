@@ -69,4 +69,9 @@ botao.style.fontFamily = 'Open Sans, sans-serif';
 botao.style.borderRadius = '10px';
 botao.style.cursor = 'pointer';
 
+inputTitulo.style.margin = '0px auto 20px auto';
+inputTitulo.style.width = '300px';
+inputTitulo.style.padding = '10px';
+inputTitulo.style.fontSize = '1.2em';
+inputTitulo.style.borderRadius = '10px';
 

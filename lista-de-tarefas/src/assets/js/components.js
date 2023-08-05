@@ -10,6 +10,7 @@ const inputTexto = document.createElement('input');
 const botao = document.createElement('button');
 const lista = document.createElement('ul');
 const inputTitulo = document.createElement('input');
+
 inputTitulo.type = 'text';
 inputTitulo.className = 'input-titulo';
 inputTitulo.placeholder = 'Digite o título da lista';
@@ -61,6 +62,8 @@ inputTexto.addEventListener('keypress', function (e) {
 function limparInput() {
     inputTexto.value = '';
     inputTexto.focus();
+    inputTitulo.value = '';
+    inputTitulo.focus();
 }
 
 //function "nome da funcção"(onde eu quero aparecer ) {}
