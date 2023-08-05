@@ -1,12 +1,12 @@
 
 // Criando as div
-const containerDiv = document.createElement('div');
-const conteudoDiv2 = document.createElement('div');
-const conteudoDiv = document.createElement('div');
-const titulo = document.createElement('h1');
-const lorem = document.createElement('p');
-const titulo2 = document.createElement('h1');
-const lorem2 = document.createElement('p');
+let containerDiv = document.createElement('div');
+let conteudoDiv2 = document.createElement('div');
+let conteudoDiv = document.createElement('div');
+let titulo = document.createElement('h1');
+let lorem = document.createElement('p');
+let titulo2 = document.createElement('h1');
+let lorem2 = document.createElement('p');
 
 containerDiv.id = 'container';
 conteudoDiv.id = 'conteudo';

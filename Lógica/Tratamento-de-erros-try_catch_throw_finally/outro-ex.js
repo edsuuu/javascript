@@ -3,6 +3,6 @@ function retornaHora(data) {
     console.log('Não é'); 
         throw new Error('data não é uma instancia de data');
     return data;
-
 }
+
 retornaHora('Dateee');
