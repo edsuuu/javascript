@@ -122,7 +122,7 @@ document.addEventListener('click', function (e) {
     }
     
 });
- 
+
 
 function salvarTarefas() {
     const liTarefas = lista.querySelectorAll('li');
@@ -131,7 +131,7 @@ function salvarTarefas() {
     for (const lista of liTarefas) {
         let tarefaTexto = lista.innerText;
         tarefaTexto = tarefaTexto.replace('Apagar', '').trim('');
-
+        tarefaTexto = tarefaTexto.replace('[object HTMLInputElement]', '').trim();
         console.log(tarefaTexto);
         listaDeTarefas.push(tarefaTexto)
 
