@@ -1,6 +1,4 @@
-//declarando função 
-
-function falaoi() {
-    console.log('Oie');
-}
-falaoi();
+function funcao(valor) {
+    console.log('hello ');
+} 
+funcao(valor);

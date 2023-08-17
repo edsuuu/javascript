@@ -8,3 +8,12 @@ Operadores de Comparação
 === igualdade estrita     "valor e tipo"
 != diferente      "so checa valor"
 !== diferente estrita      "checa valor e tipo" 
+
+
+/*
+Operadores Lógicos
+&& -> AND -> E -> Todas as expressões precisam ser verdadeiras para retornar true
+|| -> OR -> OU
+! -> NOT -> NÃO
+*/
+
