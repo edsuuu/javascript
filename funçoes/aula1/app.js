@@ -1,4 +1,4 @@
-function funcao(valor) {
-    console.log('hello ');
+function funcao() {
+    console.log('hello');
 } 
-funcao(valor);
+funcao('valor');
