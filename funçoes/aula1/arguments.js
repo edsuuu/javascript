@@ -6,3 +6,4 @@ function funcao(a, b = 2, c = 4) {
 }
 
 funcao(2);
+ 
