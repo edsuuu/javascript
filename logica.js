@@ -10,4 +10,4 @@ function maiorNumero(num1, num2) {
     }
 }
 
-console.log(maiorNumero);
+console.log(maiorNumero(num1, num2));
