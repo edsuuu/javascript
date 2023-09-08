@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(43, 66, 66);
+}
+.content {
+    justify-content: center;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+}
+.content .title {
+    margin-bottom: 10px;
+}
+.content .title h1{
+    font-size: 1.7rem;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+.content .title input{
+    font-size: 1.1rem; 
+    border-radius: 5px;
+}
+
+table {
+    margin: auto;
+}
+
+.bloco {
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(118, 126, 126);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .2s;
+    border: 1px solid rgba(0, 0, 0, 0.388);
+}
+.bloco:hover{
+    cursor: pointer;
+    background-color: rgb(223, 223, 223);
+    color: black;
+}
