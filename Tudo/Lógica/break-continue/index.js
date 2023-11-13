@@ -19,5 +19,3 @@ for (let i in numeros) {
     
     console.log(numero);
 }
-
-const num1 = console.log();

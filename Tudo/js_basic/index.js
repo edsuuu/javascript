@@ -4,7 +4,7 @@ const idade = 30;
 const peso = 84;
 const alturaEmCm = 1.80; // <-- NESTE LOCAL
 let indiceMassaCorporal;
-let anoNascimento;
+let anoNascimento;//definne a variavel mas inicia abaixo 
 
 indiceMassaCorporal = peso / (alturaEmCm * alturaEmCm);
 anoNascimento = 2023 - idade;
