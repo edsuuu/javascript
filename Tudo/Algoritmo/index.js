@@ -1,4 +1,3 @@
-
 let idade = 28;
 let salario = 20000;
 let nome = "Maria";

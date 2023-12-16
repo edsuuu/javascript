@@ -8,7 +8,7 @@ function criaPessoa(nome, sobrenome, a, p) {
     return `${nome} ${sobrenome}`
 
     },
-    //metodos sao criados e separados por virgulo 
+    //metodos sao criados e separados por virgula
     fala/*function pode colocar function para funcionar essa funcao*/(assunto) {
       return `${this.nome} está ${assunto}.`;
     },

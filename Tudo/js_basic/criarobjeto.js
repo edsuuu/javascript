@@ -5,6 +5,7 @@ function criarpessoa (nome, sobrenome, idade) {
         idade
     }
 }
+
 const pessoal = criarpessoa ('Edson', 'Silva', 20);
 const pessoa2 = criarpessoa ('Roberto', 'Oliveira', 22);
 const pessoa3 = criarpessoa ('Marcelo', 'Lima', 32);

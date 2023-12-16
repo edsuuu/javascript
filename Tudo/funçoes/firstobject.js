@@ -2,8 +2,6 @@
 
 falaoi();
 
-
-
 function falaoi() {
     console.log('Oie');
 }
