@@ -8,10 +8,9 @@ function calcArea(a, b) {
 
     const terreno = a * b;
 
-
-    return resultado, terreno;
+    return { resultado, terreno };
 }
 
 
-console.log(calcArea(2,))
+console.log(calcArea(2, 10))
 
