@@ -9,7 +9,7 @@ function soma(x, y) {
 }
 try {
     console.log(soma(1, 2));
-    console.log(soma('1', 2)); //se comentar essa linha não vai ter erro 
+    // console.log(soma('1', 2)); //se comentar essa linha não vai ter erro 
 } catch (erro) {
     console.log('Algo deu errado');
     // console.log(erro); não mostrar isso no front para o usuario

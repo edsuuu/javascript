@@ -31,3 +31,7 @@ let timer = setInterval(function () {
         clearInterval(timer);
     }
     , 2000);
+
+function teste() {
+    console.log('olha a hora')
+}

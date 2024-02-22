@@ -20,7 +20,7 @@ try {
     const hora = retornaHora(data); // se colocar um numero 11 da o erro 
     console.log(hora);
 } catch (e) {
-    //tratar erro 
+    console.log('deu erro')
 } finally {
     console.log('tenha um bom dia');
 }

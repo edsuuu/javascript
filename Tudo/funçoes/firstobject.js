@@ -1,7 +1,5 @@
 //declarando função  tanto antes ou depois de declarar a função 
 
-falaoi();
-
 function falaoi() {
     console.log('Oie');
 }
