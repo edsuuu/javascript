@@ -1,8 +1,8 @@
 function recursiva(max){
-    if(max >= 2000) return;
+    if(max >= 10) return;
     max++;
     console.log(max);
     recursiva(max);
 }
 
-recursiva(0)
+recursiva(-10)

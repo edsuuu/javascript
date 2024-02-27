@@ -1,3 +1,4 @@
+//função anonima 
 function retornaFuncao() {
     const nome = 'Edson';
     return function() {

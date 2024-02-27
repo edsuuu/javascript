@@ -9,7 +9,7 @@ function criaPessoa(nome, sobrenome, a, p) {
 
     },
     //metodos sao criados e separados por virgula
-    fala/*function pode colocar function para funcionar essa funcao*/(assunto) {
+    fala/*function pode colocar function para funcionar essa funcao q seria um metotodo fala(){}*/(assunto) {
       return `${this.nome} está ${assunto}.`;
     },
 
@@ -28,8 +28,9 @@ const p1 = criaPessoa('Luiz', 'Otávio', 1.8, 80);
 const p2 = criaPessoa('João', 'Otávio', 1.90, 57);
 const p3 = criaPessoa('Junior', 'Otávio', 1.5, 110);
 
-console.log(p1.imc);
+console.log(p1);
 console.log(p2.imc);
 console.log(p3.imc);
 
-    // Getter
+// Getter
+

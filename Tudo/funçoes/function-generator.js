@@ -8,15 +8,15 @@ function* geradora1() {
 }
 
 const g1 = geradora1();
-//para ultilizar a função geradora dentro do log usar g1.next()
+// para ultilizar a função geradora dentro do log usar g1.next()
 
-// console.log(g1.next());
-// console.log(g1.next());
-// console.log(g1.next());
+console.log(g1.next());
+console.log(g1.next());
+console.log(g1.next());
 
-// console.log(g1.next().value);
-// console.log(g1.next().value);
-// console.log(g1.next().value);
+console.log(g1.next().value);
+console.log(g1.next().value);
+console.log(g1.next().value);
 
 //ao inves de usar console.log
 //é possivel ultilizar uma função chamada for
@@ -28,12 +28,16 @@ for (let valor of g1) {
 
 function* geradora2() {
     let i = 0;
+
     while (true) {
         yield i;
         i++;
     }
 }
+
 const g2 = geradora2();
+///a cada console log é infinito a cada preenchimento de linha ele vai gerar um numero 
+
 console.log(g2.next().value);
 console.log(g2.next().value);
 console.log(g2.next().value);

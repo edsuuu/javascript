@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- Adicionando o arquivo CSS -->
+  </head>
+  <body>
+    <h1>Lista de Produtos</h1>
+    <ul id="lista-produtos"></ul>
+
+    <script>
+      // Lista de produtos fictícios, incluindo imagens
+      var produtos = [
+        { id: 1, nome: "Produto 1", valor: 10.99, imagem: "imagem1.jpg" },
+        { id: 2, nome: "Produto 2", valor: 20.49, imagem: "imagem2.jpg" },
+        { id: 3, nome: "Produto 3", valor: 15.75, imagem: "imagem3.jpg" },
+        { id: 4, nome: "Produto 4", valor: 8.99, imagem: "imagem4.jpg" },
+        { id: 5, nome: "Produto 5", valor: 12.0, imagem: "imagem5.jpg" },
+      ];
+
+      // Selecionando o elemento HTML onde queremos exibir os produtos
+      var listaProdutos = document.getElementById("lista-produtos");
+
+      // Iterando sobre a lista de produtos e construindo o HTML para cada um
+      produtos.forEach(function (produto) {
+        var itemLista = document.createElement("li");
+
+        // Criando a tag de imagem
+        var imagem = document.createElement("img");
+        imagem.src = produto.imagem;
+        imagem.alt = produto.nome;
+        imagem.style.width = "100px"; // Definindo a largura da imagem
+
+        // Adicionando a imagem ao item da lista
+        itemLista.appendChild(imagem);
+
+        // Criando um parágrafo para exibir o nome e valor do produto
+        var descricaoProduto = document.createElement("p");
+        descricaoProduto.textContent =
+          produto.nome + " - R$" + produto.valor.toFixed(2);
+
+        // Adicionando o parágrafo ao item da lista
+        itemLista.appendChild(descricaoProduto);
+
+        // Adicionando o item da lista à lista de produtos
+        listaProdutos.appendChild(itemLista);
+      });
+    </script>
+  </body>
+</html>
