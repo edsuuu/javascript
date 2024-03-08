@@ -29,7 +29,7 @@ document.addEventListener('click', e => {
 
 });
 
-function carregarPagina(el) {
+async function carregarPagina(el) {
     const href = el.getAttribute('href');
 
     const objConfig = {
@@ -37,11 +37,12 @@ function carregarPagina(el) {
         url: href,
     };
 
-    request(objConfig).then(response => {
+    try {
+        const response = await request(objConfig);
         carregaResultado(response);
-    }).catch(e => {
-        console.log(e);
-    });
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 function carregaResultado(response) {
