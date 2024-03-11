@@ -52,14 +52,14 @@ ValidaCPF.prototype.criaDigito = function (cpfParcial) {
         // console.log(regressivo, typeof val, regressivo * val);
         acumulador += (regressivo * Number(val));
         regressivo--;
-        
+
         return acumulador;
     }, 0);
     // console.log(total)//valor da soma 
-    
-  const digito = 11 - (total % 11);
-//   console.log(digito);
-  return digito > 9 ? '0' : String(digito);
+
+    const digito = 11 - (total % 11);
+    //   console.log(digito);
+    return digito > 9 ? '0' : String(digito);
 
 };
 
@@ -74,6 +74,6 @@ const cpf = new ValidaCPF('');
 
 if (cpf.Valida()) {
     console.log('CPF válido');
-}else{
+} else {
     console.log('CPF invalido');
 }
