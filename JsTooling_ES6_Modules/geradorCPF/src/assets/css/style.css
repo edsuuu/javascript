@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+     --primary-color: rgb(17, 86, 102);
+     --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+     box-sizing: border-box;
+     outline: 0;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     background: var(--primary-color);
+     font-family: "Open sans", sans-serif;
+     font-size: 1.3em;
+     line-height: 1.5em;
+
+     & .container {
+          max-width: 640px;
+          margin: 50px auto;
+          background: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          & h1 {
+               text-align: center;
+               margin-bottom: 40px;
+          }
+
+          & button {
+               padding: 10px;
+               font-size: 1.2rem;
+               margin-bottom: 40px;
+               border-radius: 10px;
+               transition: .3s;
+          }
+          & button:hover{
+               background-color: aqua;
+          }
+
+          & .cpf-gerado {
+               font-size: 2em;
+               color: var(--primary-color);
+               text-align: center;
+               font-weight: bold;
+               margin-bottom: 40px;
+               letter-spacing: 5px;
+          }
+     }
+}

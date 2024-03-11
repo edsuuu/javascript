@@ -1,0 +1,58 @@
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+body {
+  background-color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  margin: auto;
+  margin-top: 50px;
+  background-color: white;
+  width: 600px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  & .gerar-senha {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  & #maiuscula,
+  #letramin,
+  #numeros,
+  #especial {
+    transform: scale(1.5);
+  }
+
+  /*ou usar o input[type=checkbox] { width: 30px;}*/
+  & #caracteres {
+    margin: auto;
+    width: 100px;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+.senha-gerada {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1.5rem;
+}

@@ -1,1 +1,1 @@
-console.log('oi');
+import './assets/css/style.css';

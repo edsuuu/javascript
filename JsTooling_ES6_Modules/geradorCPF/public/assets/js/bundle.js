@@ -20,10 +20,64 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `h1{
-     background-color: aqua;
-}`, "",{"version":3,"sources":["webpack://./src/assets/css/style.css"],"names":[],"mappings":"AAAA;KACK,sBAAsB;AAC3B","sourcesContent":["h1{\r\n     background-color: aqua;\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `:root {
+     --primary-color: rgb(17, 86, 102);
+     --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+     box-sizing: border-box;
+     outline: 0;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     background: var(--primary-color);
+     font-family: "Open sans", sans-serif;
+     font-size: 1.3em;
+     line-height: 1.5em;
+
+     & .container {
+          max-width: 640px;
+          margin: 50px auto;
+          background: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          & h1 {
+               text-align: center;
+               margin-bottom: 40px;
+          }
+
+          & button {
+               padding: 10px;
+               font-size: 1.2rem;
+               margin-bottom: 40px;
+               border-radius: 10px;
+               transition: .3s;
+          }
+          & button:hover{
+               background-color: aqua;
+          }
+
+          & .cpf-gerado {
+               font-size: 2em;
+               color: var(--primary-color);
+               text-align: center;
+               font-weight: bold;
+               margin-bottom: 40px;
+               letter-spacing: 5px;
+          }
+     }
+}
+`, "",{"version":3,"sources":["webpack://./src/assets/css/style.css"],"names":[],"mappings":"AACA;KACK,iCAAiC;KACjC,sCAAsC;AAC3C;;AAEA;KACK,sBAAsB;KACtB,UAAU;AACf;;AAEA;KACK,SAAS;KACT,UAAU;KACV,gCAAgC;KAChC,oCAAoC;KACpC,gBAAgB;KAChB,kBAAkB;;KAElB;UACK,gBAAgB;UAChB,iBAAiB;UACjB,gBAAgB;UAChB,aAAa;UACb,mBAAmB;UACnB,aAAa;UACb,uBAAuB;UACvB,mBAAmB;UACnB,sBAAsB;;UAEtB;eACK,kBAAkB;eAClB,mBAAmB;UACxB;;UAEA;eACK,aAAa;eACb,iBAAiB;eACjB,mBAAmB;eACnB,mBAAmB;eACnB,eAAe;UACpB;UACA;eACK,sBAAsB;UAC3B;;UAEA;eACK,cAAc;eACd,2BAA2B;eAC3B,kBAAkB;eAClB,iBAAiB;eACjB,mBAAmB;eACnB,mBAAmB;UACxB;KACL;AACL","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap\");\r\n:root {\r\n     --primary-color: rgb(17, 86, 102);\r\n     --primary-color-darker: rgb(9, 48, 56);\r\n}\r\n\r\n* {\r\n     box-sizing: border-box;\r\n     outline: 0;\r\n}\r\n\r\nbody {\r\n     margin: 0;\r\n     padding: 0;\r\n     background: var(--primary-color);\r\n     font-family: \"Open sans\", sans-serif;\r\n     font-size: 1.3em;\r\n     line-height: 1.5em;\r\n\r\n     & .container {\r\n          max-width: 640px;\r\n          margin: 50px auto;\r\n          background: #fff;\r\n          padding: 20px;\r\n          border-radius: 10px;\r\n          display: flex;\r\n          justify-content: center;\r\n          align-items: center;\r\n          flex-direction: column;\r\n\r\n          & h1 {\r\n               text-align: center;\r\n               margin-bottom: 40px;\r\n          }\r\n\r\n          & button {\r\n               padding: 10px;\r\n               font-size: 1.2rem;\r\n               margin-bottom: 40px;\r\n               border-radius: 10px;\r\n               transition: .3s;\r\n          }\r\n          & button:hover{\r\n               background-color: aqua;\r\n          }\r\n\r\n          & .cpf-gerado {\r\n               font-size: 2em;\r\n               color: var(--primary-color);\r\n               text-align: center;\r\n               font-weight: bold;\r\n               margin-bottom: 40px;\r\n               letter-spacing: 5px;\r\n          }\r\n     }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -468,6 +522,102 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/assets/modules/GeraCPF.JS":
+/*!***************************************!*\
+  !*** ./src/assets/modules/GeraCPF.JS ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ GeraCPF)
+/* harmony export */ });
+/* harmony import */ var _ValidaCPF_JS__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ValidaCPF.JS */ "./src/assets/modules/ValidaCPF.JS");
+
+
+class GeraCPF {
+    rand(min = 100000000, max = 999999999) {
+        return String(Math.floor(Math.random() * (max - min) + min));
+    }
+
+    formatado(cpf) {
+        return (
+            cpf.slice(0, 3) + "." +
+            cpf.slice(3, 6) + "." +
+            cpf.slice(6, 9) + "-" +
+            cpf.slice(9, 11)
+        );
+    }
+
+    geraNovoCpf() {
+        const cpfSemDigito = this.rand();
+        const digito1 = _ValidaCPF_JS__WEBPACK_IMPORTED_MODULE_0__["default"].geraDigito(cpfSemDigito);
+        const digito2 = _ValidaCPF_JS__WEBPACK_IMPORTED_MODULE_0__["default"].geraDigito(cpfSemDigito + digito1);
+        const novoCpf = cpfSemDigito + digito1 + digito2;
+        return this.formatado(novoCpf);
+    }
+}
+
+/***/ }),
+
+/***/ "./src/assets/modules/ValidaCPF.JS":
+/*!*****************************************!*\
+  !*** ./src/assets/modules/ValidaCPF.JS ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ValidaCPF)
+/* harmony export */ });
+class ValidaCPF {
+     constructor(cpfEnviado) {
+          Object.defineProperty(this, 'cpfLimpo', {
+               writable: false,
+               enumerable: true,
+               configurable: false,
+               value: cpfEnviado.replace(/\D+/g, '')
+          });
+     }
+
+     éSequência() {
+          return this.cpfLimpo.charAt(0).repeat(11) === this.cpfLimpo;
+     }
+
+     geraNovoCpf() {
+          const cpfSemDigitos = this.cpfLimpo.slice(0, -2);
+          const digito1 = ValidaCPF.geraDigito(cpfSemDigitos);
+          const digito2 = ValidaCPF.geraDigito(cpfSemDigitos + digito1);
+          this.novoCPF = cpfSemDigitos + digito1 + digito2;
+     }
+
+     static geraDigito(cpfSemDigitos) {
+          let total = 0;
+          let reverso = cpfSemDigitos.length + 1;
+
+          for (let stringNumerica of cpfSemDigitos) {
+               total += reverso * Number(stringNumerica);
+               reverso--;
+          }
+
+          const digito = 11 - (total % 11);
+          return digito <= 9 ? String(digito) : '0';
+     }
+
+     valida() {
+          if (!this.cpfLimpo) return false;
+          if (typeof this.cpfLimpo !== 'string') return false;
+          if (this.cpfLimpo.length !== 11) return false;
+          if (this.éSequência()) return false;
+          this.geraNovoCpf();
+
+          return this.novoCPF === this.cpfLimpo;
+     }
+}
+
+
 /***/ })
 
 /******/ 	});
@@ -550,8 +700,21 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _assets_css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/style.css */ "./src/assets/css/style.css");
+/* harmony import */ var _assets_modules_GeraCPF_JS__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/modules/GeraCPF.JS */ "./src/assets/modules/GeraCPF.JS");
+/* harmony import */ var _assets_css_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/css/style.css */ "./src/assets/css/style.css");
 
+
+function gerar() {
+  var gera = new _assets_modules_GeraCPF_JS__WEBPACK_IMPORTED_MODULE_0__["default"]();
+  var cpfGerado = document.querySelector('.cpf-gerado');
+  cpfGerado.innerHTML = gera.geraNovoCpf();
+}
+document.addEventListener('DOMContentLoaded', function () {
+  var botaoGerar = document.querySelector('.btn-gerar');
+  if (botaoGerar) {
+    botaoGerar.addEventListener('click', gerar);
+  }
+});
 })();
 
 /******/ })()
