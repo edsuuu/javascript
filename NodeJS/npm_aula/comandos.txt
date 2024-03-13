@@ -1,0 +1,56 @@
+--> Iniciar um projeto 
+
+::npm init -y 
+
+
+
+-->  Instalar um pacote
+
+::npm install nomedopacote
+
+
+
+--> Para atualizar os pacote 
+
+:: npm update 
+
+
+--> Para deixar uma versao especifica para não poder atualizar 
+
+::npm install nomedopacote@1.0.0 -E
+
+
+
+--> Deixar como dependencias de desenvolvimento 
+
+::npm i --save-dev nomedopacote 
+
+
+
+--> Para voltar para dependencias normal 
+
+::npm install nomedopacote
+
+
+
+--> Instalar uma versao especifica 
+
+::npm install nomedopacote@1.0.0
+
+
+--> Para densistalar um pacote
+
+npm uninstall nomedopacote
+
+
+--> Para ver todos os pacotes instalados 
+
+:: npm ls ---> vai listar todos os pacotes que depende um do outro
+:: npm ls --depth=0 ---> vai listar todos os pacotes que voce instalou
+:: npm ls --depth=1 ---> vai abrir uma pasta a mais 
+
+
+--> Para saber quais pacotes estão desatualizados 
+
+:: npm outdated
+
