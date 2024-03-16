@@ -1,0 +1,24 @@
+<%- include('includes/head') %>
+
+<body>
+     <h1>
+          <% if (typeof titulo !=='undefined' ) {%>
+               <%= titulo%>
+                    <% } else{ %>
+                         Error: O titulo nao foi enviado. <%# titulo comentado em controller*/ #%>
+                              <% }%>
+
+                                   <% numeros.forEach(num=> {%>
+                                        <br>
+                                        <%= num %>
+                                             <% }); %>
+     </h1>
+
+     <h1> <%= umaVariavelLocal %></h1>
+     <form action="/" method="post">
+          <%#   <input type="hidden" name="_csrf" value=" <   %= csrfToken % >  "> %>
+          <label for="Cliente">Cliente</label>
+          <input type="text" name="Cliente" id="Cliente">
+          <button>Submit</button>
+     </form>
+     <%- include('includes/footer') %>

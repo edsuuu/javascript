@@ -1,0 +1,18 @@
+<% CONTROLE DE FLUXO (IF, FOR ... ) %>
+<%= IMPRIME ESCAPANDO CARACTERES DO HTML <p> teste </p> %>
+<%- IMPRIME SEM ESCAPAR CARACTERES DO HTML teste %>
+<%# COMENTARIO %>
+<%- include('nomedapasta/nomedoarquivo') %>
+
+
+EXEMPLO DE IF
+
+<% if (algumacoisa) { %>
+
+<%= exibe o  texto %>
+
+<% } else { %>
+
+<%= exibe o  texto %>
+
+<% }  %>
