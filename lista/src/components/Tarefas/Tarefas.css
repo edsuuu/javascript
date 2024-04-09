@@ -1,0 +1,35 @@
+.tarefas {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  & li {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    padding: 10px;
+  }
+  & li:hover {
+    background-color: rgba(166, 166, 185, 0.37);
+    border-radius: 10px;
+  }
+  & .icons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    & .edit {
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: rgb(61, 100, 100);
+    }
+    & .delete {
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: rgb(121, 27, 15);
+    }
+  }
+}
