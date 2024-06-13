@@ -9,7 +9,7 @@ class ValidaCPF {
       });
     }
   
-    éSequência() {
+    eSequencia() {
       return this.cpfLimpo.charAt(0).repeat(11) === this.cpfLimpo;
     }
   
@@ -37,7 +37,7 @@ class ValidaCPF {
       if(!this.cpfLimpo) return false;
       if(typeof this.cpfLimpo !== 'string') return false;
       if(this.cpfLimpo.length !== 11) return false;
-      if(this.éSequência()) return false;
+      if(this.eSequencia()) return false;
       this.geraNovoCpf();
   
       return this.novoCPF === this.cpfLimpo;
